@@ -10,6 +10,9 @@ This tool was originally designed to format log messages.
 In other words, to be able to put any type of variables (typically arrays and exceptions) into a string.
 
 
+StringFormatterTool can be installed as a [planet](https://github.com/lingtalfi/Observer/blob/master/article/article.planetReference.eng.md).
+
+
 
 How to use?
 --------------
@@ -28,7 +31,7 @@ use a tag.
 
 use StringFormatter\StringFormatterTool;
 
-require_once "bigbang.php";
+require_once "bigbang.php"; // start the local universe
 
 $e = new \Exception("ooo");
 $data = [
@@ -37,15 +40,29 @@ $data = [
     "hash" => $e,
 ];
 $fruit = "apple";
-echo StringFormatterTool::format("An exception occurred:\n {e},\n\nthe array was {a},\n\nthe fruit was {fruit}", [
+echo nl2br(StringFormatterTool::format("An exception occurred:\n {e},\n\nthe array was {a},\n\nthe fruit was {fruit}", [
     '{e}' => $e,
     '{a}' => $data,
     '{fruit}' => $fruit,
-]);
-
+]));
 ```
 
+The above example's output will look like this:
 
+```abap
+An exception occurred:
+exception 'Exception' with message 'ooo' in /Volumes/Macintosh HD 2/it/php/projects/universe/www/sandbox-pretest.php:8
+Stack trace:
+#0 {main},
+
+the array was [
+'false' => false,
+'doom' => integer(789),
+'hash' => object(Exception),
+],
+
+the fruit was apple
+```
 
 
 
