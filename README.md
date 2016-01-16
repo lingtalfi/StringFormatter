@@ -49,7 +49,7 @@ echo nl2br(StringFormatterTool::format("An exception occurred:\n {e},\n\nthe arr
 
 The above example's output will look like this:
 
-```abap
+```html
 An exception occurred:
 exception 'Exception' with message 'ooo' in /Volumes/Macintosh HD 2/it/php/projects/universe/www/sandbox-pretest.php:8
 Stack trace:
