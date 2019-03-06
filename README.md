@@ -17,7 +17,7 @@ Install
 ==========
 Using the [uni](https://github.com/lingtalfi/universe-naive-importer) command.
 ```bash
-uni import StringFormatter
+uni import Ling/StringFormatter
 ```
 
 
@@ -37,7 +37,7 @@ use a tag.
 <?php
 
 
-use StringFormatter\StringFormatterTool;
+use Ling\StringFormatter\StringFormatterTool;
 
 require_once "bigbang.php"; // start the local universe
 

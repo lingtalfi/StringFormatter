@@ -1,13 +1,13 @@
 <?php
 
-namespace StringFormatter;
+namespace Ling\StringFormatter;
 
 /*
  * LingTalfi 2015-12-11
  */
-use ArrayToString\ArrayToStringUtil;
-use ArrayToString\SymbolManager\PhpArrayToStringSymbolManager;
-use VariableToString\AuthorVariableToStringUtil;
+use Ling\ArrayToString\ArrayToStringUtil;
+use Ling\ArrayToString\SymbolManager\PhpArrayToStringSymbolManager;
+use Ling\VariableToString\AuthorVariableToStringUtil;
 
 class StringFormatterTool
 {
